@@ -12,6 +12,10 @@ page-layout: full
 title-block-banner: true
 ---
 
-Welcome to my website showing off my R portfolio. I will be showcasing my findings on how education levels are link to neurological disorders.
+Hello Everyone!
 
-I created this website as part of a course at Dominican university. It was created with R and Quarto in RStudio.
+Welcome to my website showing off my R portfolio. I will be showcasing my findings on how education levels are link to neurological disorders. My name is Jayleen Sanchez and I am a undergraduate student at Dominican University. I am majoring in Biology and minoring in Chemistry with a pre-med concentration.
+
+![](images/brain.jpeg){fig-align="center" width="202"}
+
+I created this website as part of a course at Dominican university. It was created with R and Quarto in RStudio. My interests in neurological disorders, such as alzheimer's and dementia, are my main focus as I work through this project and being to analyze data.
