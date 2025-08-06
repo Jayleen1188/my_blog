@@ -100,9 +100,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "The content on this page is from about.qmd. Edit that file to change how this page looks\ntjhwrijhtjiijthrwortjOMGGGGGGGGGGGGGG. something ijtotjhwuehuhgiurhtg\n“About” pages are special quarto template pages, with multiple options: https://quarto.org/docs/websites/website-about.html.\nTry changing the template type from jolla to one of the other options for a different look and feel."
+    "text": "The content on this page is from about.qmd. Edit that file to change how this page looks\nThid id text.\nThis is a new paragraph.\n\nThis is a bullet point\nThis is another\n\n\nThis is a numbert list\nanother\n\nGoogle used to be great.\n\n\n[1] 4\n\n\nInstalling package into '/cloud/lib/x86_64-pc-linux-gnu-library/4.5'\n(as 'lib' is unspecified)\n\n\n\n\n\n\n\n\n\n\nIntoduction\n\n\nMethods\n\n\nData Source\n\n\nPackages Used\n\n\nResults\n\n\nDiscussion"
   },
   {
     "objectID": "posts/my_first_post/index.html",
