@@ -12,6 +12,6 @@ page-layout: full
 title-block-banner: true
 ---
 
-Welcome to my website showing off my R portfolio
+Welcome to my website showing off my R portfolio. I will be showcasing my findings on how education levels are link to neurological disorders.
 
-I created this website as part of a course at Dominican university
+I created this website as part of a course at Dominican university. It was created with R and Quarto in RStudio.
