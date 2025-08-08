@@ -29,7 +29,7 @@ mydata <- read.csv("StressLevelDataset.csv")
 
 # Graph comparing academic performance to Student/Teacher relationships
 
-Relationship_vs_Academic <- ggplot(mydata, mapping = aes(x = teacher_student_relationship, y = academic_performance)) + geom_jitter(width = 0.2, alpha = 0.4) + geom_smooth(method = "lm", se = FALSE, color = "blue") + labs(title = "Teacher/Student Relationship vs Academic Performance", x = "Teacher/Student Relationship", y = "Academic Performance")
+Relationship_vs_Academic <- ggplot(mydata, mapping = aes(x = teacher_student_relationship, y = academic_performance, color = stress_level)) + geom_jitter(width = 0.2, alpha = 0.4) + geom_smooth(method = "lm", se = FALSE, color = "blue") + labs(title = "Teacher/Student Relationship vs Academic Performance", x = "Teacher/Student Relationship", y = "Academic Performance")
 
 Relationship_vs_Academic
 ggsave("Relationship_vs_Academic.png")
