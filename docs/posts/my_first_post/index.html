@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Matt Crump">
-<meta name="dcterms.date" content="2022-10-21">
+<meta name="author" content="Jayleen Sanchez">
+<meta name="dcterms.date" content="2025-08-08">
 
 <title>My First post – Jayleen’s R Portfolio</title>
 <style>
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -118,8 +153,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title column-body">
       <h1 class="title">My First post</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">goals</div>
-                <div class="quarto-category">general</div>
+                <div class="quarto-category">education</div>
+                <div class="quarto-category">stress</div>
               </div>
                   </div>
   </div>
@@ -130,14 +165,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Matt Crump </p>
+               <p>Jayleen Sanchez </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 21, 2022</p>
+        <p class="date">August 8, 2025</p>
       </div>
     </div>
     
@@ -156,23 +191,71 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is an example first post. Whatever you write here will appear inside your post.</p>
-<p>It is possible to write lists:</p>
+<p>Hello everyone!</p>
+<p>This is my project on my introduction to R. I will be focusing on the factors that cause students stress in relation to their academic performance.</p>
 <ol type="1">
-<li>One</li>
-<li>Two</li>
-<li>Three</li>
+<li>Introduction</li>
 </ol>
-<p>And make headers</p>
-<section id="this-is-a-second-level-heading" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-a-second-level-heading">This is a second level heading</h2>
-<p>You can include images, and many other kinds of content.</p>
-<p>If you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>The first image in a blog post will also be used on the listings page.</p>
+<p>I am going to be diving into student stress and how it affects their performance. I will be focusing on teacher-student relationships and if it affects the students performance, as well as, if academic pressure or social support have a bigger impact on the students stress.</p>
+<p>These questions matter because understanding the cause of the student’s stress is important to help improve educational outcomes, health, and retention. In particular, academic success can be shaped not only by student effort but also by the relationship they have with instructors. Teacher-student relationships are often overlooked but it could be the main cause of both stress and performance.</p>
+<p>I predict that the students who don’t have a close relationship with their teachers will have a lower academic performance compared to those who have a closer relationship and that social support has a bigger impact on the student’s stress than academic pressure.</p>
+<ol start="2" type="1">
+<li>Methods</li>
+</ol>
+<p>This data set was collected from a nationwide survey that consisted of 843 college students ranging from ages 18-21 answering questions about their experiences with stress, health, relationships, academics, and emotional well-being. The data was collected via a google form using a five-point Likert scale (“Not at all” to “Extremely”) and anonymized to protect privacy</p>
+<ol start="2" type="1">
+<li>Results</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.2     ✔ tibble    3.3.0
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.1.0     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"StressLevelDataset.csv"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Graph comparing academic performance to Student/Teacher relationships</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Relationship_vs_Academic <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mydata, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> teacher_student_relationship, <span class="at">y =</span> academic_performance)) <span class="sc">+</span> <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Teacher/Student Relationship vs Academic Performance"</span>, <span class="at">x =</span> <span class="st">"Teacher/Student Relationship"</span>, <span class="at">y =</span> <span class="st">"Academic Performance"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>Relationship_vs_Academic</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"Relationship_vs_Academic.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Saving 7 x 5 in image
+`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># academic pressure and social support affects on student stress</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mydata, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-image: profile.jpg
+image: jsanchez23@my.dom.edu-2f2ade38.jpg
 about:
   template: jolla
   links:
@@ -15,21 +15,13 @@ about:
       href: https://github.com
 ---
 
-The content on this page is from `about.qmd`. Edit that file to change how this page looks
+Hello everyone!
 
-Thid id text.
+My name is Jayleen Sanchez and I am a undergraduate student at Dominican University. I am majoring in Biology and minoring in Chemistry with a pre-med concentration.
 
-This is a new paragraph.
+A little more about me is that I am very instrested in education and how it can affect mental health and or neurological disorders. Whenever I get the chance to research a topic these are my top go-to's.
 
--   This is a bullet point
-
--   This is another
-
-1.  This is a numbert list
-
-2.  another
-
-[Google]{.underline} used to be great.
+Aside from scholarly things a fun fact about me is that I am an ambivert which I think is intresting. I tend to be more on the introvert side but when the occasion arrises I tend to become an extrovert. This comes in very useful when I am in a group with new people and help break the ice between all of us!
 
 ```{r}
 #| echo: false
@@ -38,17 +30,3 @@ install.packages("ggplot2")
 library(ggplot2)
 ggplot(mpg, aes(x = hwy, y = cyl)) + geom_point()
 ```
-
-# Intoduction
-
-# Methods
-
-# Data Source
-
-# Packages Used
-
-# Results
-
-# Discussion
-
-# 
