@@ -40,7 +40,7 @@ ggsave("Relationship_vs_Academic.png")
 ```{r}
 
 # academic pressure vs student stress
-ggplot(mydata, mapping = aes(x = study_load, y = stress_level, color = social_support)) + geom_point(position = "jitter") + geom_smooth(method = "lm") + labs(title = "Relationship Between Study Load, Social Support, and Stress Level" )
+ggplot(mydata, mapping = aes(y = study_load, x = social_support, color = stress_level)) + geom_point(position = "jitter") + geom_smooth(method = "lm") + labs(title = "Relationship Between Study Load, Social Support, and Stress Level" )
 
 #ggplot(mydata, aes(x = study_load)) +
 #  geom_histogram(binwidth = 1)
