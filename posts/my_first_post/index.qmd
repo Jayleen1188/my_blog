@@ -29,7 +29,7 @@ mydata <- read.csv("StressLevelDataset.csv")
 
 # Graph comparing academic performance to Student/Teacher relationships
 
-Relationship_vs_Academic <- ggplot(mydata, mapping = aes(x = teacher_student_relationship, y = academic_performance, color = stress_level)) + geom_jitter(width = 0.2, alpha = 0.4) + geom_smooth(method = "lm", se = FALSE, color = "blue") + labs(title = "Teacher/Student Relationship vs Academic Performance", x = "Teacher/Student Relationship", y = "Academic Performance")
+Relationship_vs_Academic <- ggplot(mydata, mapping = aes(x = teacher_student_relationship, y = academic_performance, color = stress_level)) + geom_jitter(width = 0.2, alpha = 0.4) + geom_smooth(method = "lm", se = FALSE, color = "blue") + labs(title = "Teacher/Student Relationship vs Academic Performance", x = "Teacher/Student Relationship", y = "Academic Performance", color = "Stress Level")
 
 Relationship_vs_Academic
 ggsave("Relationship_vs_Academic.png")
@@ -40,7 +40,10 @@ ggsave("Relationship_vs_Academic.png")
 ```{r}
 
 # academic pressure vs student stress
-ggplot(mydata, mapping = aes(y = study_load, x = social_support, color = stress_level)) + geom_point(position = "jitter") + geom_smooth(method = "lm") + labs(title = "Relationship Between Study Load, Social Support, and Stress Level" )
+graph_2 <- ggplot(mydata, mapping = aes(y = study_load, x = social_support, color = stress_level)) + geom_point(position = "jitter") + geom_smooth(method = "lm") + labs(title = "Study Load vs Social Support", x = "Social Support", y = "Study Load", color = "Stress Level" )
+
+ggsave("graph_2.png")
+graph_2
 
 #ggplot(mydata, aes(x = study_load)) +
 #  geom_histogram(binwidth = 1)
